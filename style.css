@@ -1,0 +1,374 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+
+/* my resets */
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* --primary: rgb(105, 198, 187); */
+    --secondary: rgb(198, 105, 149);
+    --textdark: rgb(33, 37, 41);
+    --textlight: rgb(105, 108, 108);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+button {
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+/* generals */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    width: 100%;
+}
+.padding {
+    padding: 80px 0;
+}
+.text-center {
+    text-align: center;
+}
+/* flex */
+.flex {
+    display: flex;
+}
+.flex-40 {
+    flex: 0 1 40%;  
+}
+.justify-between {
+    justify-content: space-between;
+}
+.item-center {
+    align-items: center;
+}
+
+
+.hero {
+    position: relative;
+    color: white;
+}
+.bg-video {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+}
+.hero-subheading {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: tomato;
+}
+.hero-heading {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 24px 0;
+    color: rgb(255, 232, 232); /* Change color to white */
+    animation: slideInDown 1s ease-out; /* Add animation */
+}
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.hero .btn {
+    font-size: 16px;
+}
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(31, 32, 32, 0.7);
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column {
+    flex-direction: column;
+}
+.font-0 {
+    font-size: 0;
+}
+.text-primary {
+    color: var(--primary);
+}
+
+/* Navigational Bar */
+.navbar{
+    padding: 16px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    /* background-color: rgb(73, 60, 58); */
+}
+.brand h1 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: tomato;
+
+}
+.nav-menu-item {
+    margin-left: 32px;
+}
+.nav-menu-item a {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+
+.nav-menu-item a:hover {
+    color: tomato;
+    transition: color 0.3s ease;
+}
+
+
+.mern{
+    background-color: #161616;
+    padding-top: 26px;
+    height: 560px;
+}
+.left{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+li{
+    margin-left: 30px;
+}
+
+h1{
+    color: tomato;
+    font-size: 45px;
+    font-weight: bolder;
+    text-align: center;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+.left li {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 5px 8px;
+    background-color: rgb(31, 25, 23);
+    border-radius: 8px;
+    padding-left: 10px;
+    list-style-type: none;
+    transition: transform 0.3s ease; /* Add transition */
+}
+
+.left li:hover {
+    transform: scale(1.1); /* Add hover effect */
+}
+.left p{
+    color: white;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+strong{
+    color: rgb(255, 116, 92);
+}
+li:hover {
+    animation: pulse 1.3s ease-in-out;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(255, 82, 111, 0.7);
+    }
+    50% {
+      transform: scale(1.1);
+      box-shadow: 0 0 0 10px rgba(255, 147, 165, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(255, 117, 140, 0);
+    }
+  }
+/* form */
+form {
+    background-color: white;
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 32px;
+    border-radius: 7px;
+    margin-top: 80px;
+}
+.form-control {
+    display: block;
+    width: 110%;
+    border: 0;
+    outline: 0;
+    padding: 12px 20px;
+    border: 1px solid transparent;
+    color: var(--textdark);
+}
+.form-control::placeholder {
+    color: var(--textdark);
+}
+.form-control:focus {
+    border-color: var(--primary);
+}
+form .btn {
+    width: 100%;
+    border: 0;
+    box-shadow: none;
+}
+
+
+/* contact */
+.contact {
+    position: relative;
+}
+.overlay1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contact form {
+    position: absolute;
+    bottom: 50px;
+    right: 70px;
+    width: 28%;
+    z-index: 2;
+}
+.contact .form-control {
+    background-color: #f5f5f5;
+    margin-bottom: 16px;
+    margin-right: 10px;
+}
+
+fieldset {
+    padding-right: 30px;
+}
+
+/* footer */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 48px 0;
+}
+small{
+    font-size: 20px;
+}
+
+
+
+
+/* buttons */
+.btn {
+    /* display: inline-block; */
+    padding: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    border-radius: 5px;
+    transition: box-shadow 200ms ease-in-out;
+}
+
+.btn-primary {
+    background-color: tomato;
+    color: #fff;
+}
+
+/* .btn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+} */
+
+.last{
+    margin-left: 520px;
+    margin-bottom: 20px;
+}
+.last i{
+    margin-left: 45px;
+    font-size: 30px;
+}
+
+
+
+

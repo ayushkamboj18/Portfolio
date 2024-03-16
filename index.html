@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/63e01550c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <header class="navbar">
+        <div class="container flex justify-between item-center">
+          <a class="brand" href="#">
+            <h1><strong class="text-primary">Portfolio</strong></h1>
+          </a>
+          <nav>
+            <ul class="flex item-center nav-menu">
+              <li class="nav-menu-item">
+                <a class="active" href="#">Home</a>
+              </li>
+              <li class="nav-menu-item">
+                <a href="#contact">Connect With Me</a>
+              </li>
+              <li class="nav-menu-item">
+                <a href="#mern">About</a>
+              </li>
+              <li class="nav-menu-item">
+                <a href="./Coursera 5QBUQ2RNTJFW.pdf" download="Ayush's resume">Download Resume</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section id="home" class="hero">
+        <video
+          class="bg-video"
+          loop
+          autoplay
+          muted
+          src="pexels-mati-mango-6330779 (Original).mp4"
+        ></video>
+        <div class="overlay center column">
+          <h3 class="hero-subheading">Ayush Kamboj</h3>
+          <h2 class="hero-heading">
+            Who loves to Create<strong class="text-primary">
+              Web Application</strong
+            >
+          </h2>
+          <!-- <a class="btn" href="#">Become a member</a> -->
+        </div>
+      </section>
+      <section id="mern" class="mern">
+        <div class="flex justify-between container">
+          <div class="left">
+            <h1>About me</h1>
+            <p>Hey there! I'm Ayush Kamboj, a <strong>Mern</strong> based developer who loves building powerful server-side web applications and crafting delightful user interfaces.My journey in the tech world has led me to explore <strong>data structures</strong>, enabling me to optimize algorithms and solve complex problems. Oh, and I'm a bit of a design geek too—I use <strong>Figma</strong> to bring my UI visions to life. Let's connect and create something awesome together!</p>
+          </div>
+          <div><img src="pxfuel.jpg" alt="" /></div>
+        </div>
+      </section>
+      <section id="contact" class="contact font-0">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.1751352098277!2d76.65720287487126!3d30.516086474689544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fc32344a6e2d7%3A0x81b346dee91799ca!2sChitkara%20University!5e0!3m2!1sen!2sin!4v1706009933476!5m2!1sen!2sin"
+          width="100%"
+          height="500"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="overlay1"></div>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <fieldset>
+            <div class="flex" style="flex-flow: column">
+              <input type="hidden" name="access_key" value="85e4a136-dcd5-4636-868f-b264aab6449c">
+              <input
+                class="form-control flex-40"
+                type="text"
+                name="name"
+                placeholder="Name"
+              />
+              <input
+                class="form-control flex-40"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+            </div>
+            <input
+              class="form-control"
+              type="text"
+              name="subject"
+              placeholder="Subject"
+            />
+            <textarea
+              class="form-control"
+              name="message"
+              rows="6"
+              placeholder="Message"
+            ></textarea>
+          </fieldset>
+          <input
+            class="btn btn-primary"
+            type="submit"
+            value="Send Message now"
+            style="cursor: pointer;"
+          />
+        </form>
+      </section>
+    </main>
+    <footer class="footer padding text-center">
+      <div class="flex last">
+        <a
+          href="https://www.linkedin.com/in/ayush-kamboj-933725245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          ><i style="color: blue;" class="fa-brands fa-linkedin fa-fade"></i
+        ></a>
+        <a href="https://github.com/ayushkamboj18"
+          ><i style="color: royalblue;" class="fa-brands fa-square-github fa-fade"></i
+        ></a>
+        <a href="https://www.instagram.com/ayush_kamboj18?igsh=bnQyNDdvcWFibm9z"
+          ><i style="color:palevioletred;" class="fa-brands fa-square-instagram fa-fade"></i
+        ></a>
+      </div>
+      <small>
+        Design by <strong style="color: tomato">Ayush Kamboj</strong>
+      </small>
+    </footer>
+  </body>
+</html>
