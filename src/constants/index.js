@@ -27,12 +27,12 @@ export const experiences = [
   },
   {
     title: 'OpenSource',
-    company_name: '06+ Projects',
+    company_name: '10+ Projects',
     icon: kalisio,
     iconBg: '#fff',
     date: 'January 2024 - Present',
     points: [
-      'I have contributed to over six projects in open-source development, all of which are based on MERN stack technology.',
+      'I have contributed to over ten projects in open-source development, all of which are based on MERN stack technology.',
     ]
   }
 ]

@@ -5,7 +5,7 @@ const SkillCard = () => (
     <div className="skill__card-gradient">
       <div className="skill__card-content">
         <h3>
-          I am passionate about web development and have been sharpening my skills in front-end technologies. I specialize in creating dynamic and responsive user interfaces using React. Additionally, I have a foundational understanding of backend development, particularly within the MERN stack (MongoDB, Express.js, React, and Node.js).
+        Hey there! 👋 I'm a third-year Computer Science Engineering student with a passion for technology and innovation. I specialize in the MERN stack (MongoDB, Express.js, React, Node.js) and am currently diving into Docker to enhance my containerization skills. With a strong foundation in Data Structures and Algorithms using C++, I love solving complex problems. I'm always eager to learn and stay updated with the latest tech trends, whether it's exploring new frameworks or contributing to open-source projects. Let's connect and build something amazing together! 🚀
         </h3>
       </div>
     </div>
