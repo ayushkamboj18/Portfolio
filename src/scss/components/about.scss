@@ -11,14 +11,14 @@
   @media (max-width: 768px) {
     width: 100%; 
     margin-top: 50px;
-    margin-bottom: 90px; 
+    margin-bottom: 200px; 
   }
 
   /* Small mobile screens */
-  @media (max-width: 492px) {
+  @media (max-width: 515px) {
     width: 100% !important; 
     margin-top: 20px;
-    margin-bottom: 130px !important;
+    margin-bottom: 260px !important;
   }
 }
 
@@ -50,7 +50,7 @@
     font-size: 20px;
     line-height: 1.2;
     color: $white;
-    @media (max-width: 492px) {
+    @media (max-width: 515px) {
       font-size: 16px;
     }
   }
