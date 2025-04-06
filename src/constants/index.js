@@ -1,5 +1,5 @@
 import {cpp, html,postman, css, express, frontend, backend, creator, web, docker, git, javascript,
-  mongodb, nodejs, reactjs, harmony ,blogging, sbms,kalisio} from '../assets'
+  mongodb, nodejs, reactjs, harmony ,blogging, sbms,kalisio, elevate} from '../assets'
 
 export const navLinks = [
   { id: 'about', title: 'About' },
@@ -16,13 +16,13 @@ export const skills = [
 
 export const experiences = [
   {
-    title: 'CGPA',
-    company_name: '09.01',
+    title: 'Core Subjects',
+    // company_name: '09.01',
     icon: kalisio,
     iconBg: '#fff',
     date: 'March 2023 - December 2023',
     points: [
-      'I am a third year student and i have acheived 9.01 CGPA till now.',
+      'Solid grasp of core computer science fundamentals, including Data Structures and Algorithms, Operating Systems, Computer Networks, Database Management Systems, and Object-Oriented Programming',
     ]
   },
   {
@@ -33,6 +33,16 @@ export const experiences = [
     date: 'January 2024 - Present',
     points: [
       'I have contributed to over ten projects in open-source development, all of which are based on MERN stack technology.',
+    ]
+  },
+  {
+    title: 'Cloud Computing',
+    company_name: 'AWS',
+    icon: kalisio,
+    iconBg: '#fff',
+    date: 'January 2024 - Present',
+    points: [
+      'Architecting robust cloud environments on AWS, leveraging EC2 instances, S3 storage, serverless Lambda functions, and RDS databases to enhance operational performance while balancing security, reliability, and budget considerations.',
     ]
   }
 ]
@@ -61,7 +71,8 @@ export const projects = [
       { name: 'Mern', color: 'pink-text-gradient' },
     ],
     image: harmony,
-    source_code_link: 'https://github.com/ayushkamboj18/Soul-Care'
+    source_code_link: 'https://github.com/ayushkamboj18/Soul-Care',
+    demo_link: 'https://soul-care.vercel.app/'
   },
   {
     name: 'Bloggy',
@@ -72,17 +83,17 @@ export const projects = [
       { name: 'Mongodb', color: 'pink-text-gradient' },
     ],
     image: blogging,
-    source_code_link: 'https://github.com/ayushkamboj18/blog-application'
+    source_code_link: 'https://github.com/ayushkamboj18/blog-application',
+    demo_link: 'https://blog-application-iota-nine.vercel.app/'
   },
   {
-    name: 'Smart Billing Management System',
-    description: 'This project manages billing and inventory system smartly and efficiently.',
+    name: 'Elev8',
+    description: 'Elev8 is a streamlined event management platform that helps organizations efficiently plan and execute events and hackathons',
     tags: [
-      { name: 'Invoice', color: 'blue-text-gradient' },
-      { name: 'Inventory', color: 'green-text-gradient' },
+      { name: 'Management', color: 'blue-text-gradient' },
       { name: 'Mern', color: 'pink-text-gradient' },
     ],
-    image: sbms,
+    image: elevate,
     source_code_link: ''
   }
 ]

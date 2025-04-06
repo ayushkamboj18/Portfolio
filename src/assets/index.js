@@ -21,6 +21,7 @@ import postman from './tech/postman.png'
 import harmony from './Harmony.png'
 import blogging from './Blogging.png'
 import sbms from './sbms.png'
+import elevate from './elevate.png'
 
 export {
   menu,
@@ -45,5 +46,6 @@ export {
   cpp,
   postman,
   harmony,
-  blogging
+  blogging,
+  elevate
 }
